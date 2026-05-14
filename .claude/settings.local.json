@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(npm run *)",
+      "WebSearch",
+      "WebFetch(domain:www.pricecharting.com)",
+      "WebFetch(domain:bulbapedia.bulbagarden.net)",
+      "WebFetch(domain:www.serebii.net)",
+      "WebFetch(domain:pokescope.app)",
+      "WebFetch(domain:limitlesstcg.com)",
+      "WebFetch(domain:www.tcgplayer.com)",
+      "Bash(npm install *)"
+    ]
+  }
+}

@@ -1,65 +1,156 @@
-import Image from "next/image";
+'use client'
 
-export default function Home() {
+import { useState, useEffect } from 'react'
+import { useRouter } from 'next/navigation'
+import { games } from '@/lib/gameData'
+import { saveSelectedGame, loadGameState, clearGameState } from '@/lib/gameState'
+
+const PIKACHU = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png'
+const EEVEE   = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png'
+const SPRITES = [PIKACHU, EEVEE, PIKACHU, EEVEE, PIKACHU]
+
+export default function StartPage() {
+  const router = useRouter()
+  const [selectedGame, setSelectedGame] = useState(0)
+  const [hasSavedGame, setHasSavedGame] = useState(false)
+
+  useEffect(() => {
+    const saved = loadGameState()
+    if (saved && saved.phase !== 'game_over' && saved.questionIndex < 10) {
+      setHasSavedGame(true)
+      setSelectedGame(saved.gameIndex)
+    }
+  }, [])
+
+  function startGame() {
+    clearGameState()
+    saveSelectedGame(selectedGame)
+    router.push('/game')
+  }
+
+  function resumeGame() {
+    router.push('/game')
+  }
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <div className="game-bg min-h-screen flex flex-col items-center justify-center relative overflow-hidden select-none">
+      {/* Subtle background rings */}
+      <div className="absolute top-10 left-10 w-48 h-48 rounded-full border border-white/5" />
+      <div className="absolute bottom-20 right-16 w-72 h-72 rounded-full border border-white/4" />
+
+      {/* Main content */}
+      <div className="flex flex-col items-center gap-9 z-10 px-8 text-center">
+
+        {/* Eyebrow label */}
+        <span
+          className="text-xs font-bold tracking-[0.35em] uppercase px-4 py-1.5 rounded-full"
+          style={{
+            background: 'rgba(250,204,21,0.1)',
+            color: 'rgba(250,204,21,0.8)',
+            border: '1px solid rgba(250,204,21,0.2)',
+          }}
+        >
+          Pokémon Kortspill
+        </span>
+
+        {/* Title — gradient text, no glow */}
+        <h1
+          className="text-5xl md:text-7xl lg:text-8xl font-black leading-tight"
+          style={{
+            background: 'linear-gradient(175deg, #ffffff 0%, #facc15 55%, #f59e0b 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            filter: 'drop-shadow(0 2px 10px rgba(0,0,0,0.6))',
+          }}
+        >
+          Vil du bli en
+          <br />
+          Pokeilionær?
+        </h1>
+
+        {/* Pikachu / Eevee row */}
+        <div className="flex items-end gap-1">
+          {SPRITES.map((src, i) => (
+            <img
+              key={i}
+              src={src}
+              alt={i % 2 === 0 ? 'Pikachu' : 'Eevee'}
+              crossOrigin="anonymous"
+              style={{
+                width: i === 2 ? '52px' : '38px',
+                height: i === 2 ? '52px' : '38px',
+                objectFit: 'contain',
+                opacity: i === 2 ? 1 : 0.65,
+                filter: i === 2 ? 'drop-shadow(0 2px 6px rgba(250,204,21,0.4))' : 'none',
+                transition: 'opacity 0.2s',
+              }}
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          ))}
         </div>
-      </main>
+
+        {/* Game selector */}
+        <div className="flex flex-col items-center gap-3 w-full max-w-md">
+          <label className="text-white/55 text-sm font-medium tracking-widest uppercase">
+            Velg spill
+          </label>
+          <select
+            value={selectedGame}
+            onChange={(e) => {
+              setSelectedGame(Number(e.target.value))
+              setHasSavedGame(false)
+            }}
+            className="w-full px-5 py-4 rounded-xl text-base font-semibold text-white cursor-pointer outline-none focus:ring-2 focus:ring-yellow-400/50"
+            style={{
+              background: 'rgba(255,255,255,0.06)',
+              border: '1.5px solid rgba(255,255,255,0.12)',
+              backdropFilter: 'blur(12px)',
+            }}
+          >
+            {games.map((game, idx) => (
+              <option
+                key={game.id}
+                value={idx}
+                style={{ background: '#0f0f2e', color: '#fff' }}
+              >
+                {game.name}
+              </option>
+            ))}
+          </select>
+        </div>
+
+        {/* Buttons */}
+        <div className="flex flex-col items-center gap-3 w-full max-w-md">
+          {hasSavedGame && (
+            <button
+              onClick={resumeGame}
+              className="w-full py-4 rounded-2xl text-lg font-bold text-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+              style={{
+                background: 'linear-gradient(135deg, #0369a1, #0ea5e9)',
+                boxShadow: '0 4px 14px rgba(0,0,0,0.35)',
+              }}
+            >
+              ▶ Fortsett spill
+            </button>
+          )}
+
+          <button
+            onClick={startGame}
+            className="w-full py-5 rounded-2xl text-xl font-black text-white transition-all duration-200 hover:scale-[1.02] active:scale-[0.98]"
+            style={{
+              background: 'linear-gradient(135deg, #b91c1c, #ef4444)',
+              boxShadow: '0 4px 18px rgba(0,0,0,0.4)',
+              letterSpacing: '0.04em',
+            }}
+          >
+            {hasSavedGame ? '🔄 Nytt spill' : '▶ Start spill'}
+          </button>
+        </div>
+
+        {/* Footer hint */}
+        <p className="text-white/30 text-sm">
+          10 spørsmål · 10 Pokémonkort å vinne
+        </p>
+      </div>
     </div>
-  );
+  )
 }
