@@ -1,9 +1,16 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useSyncExternalStore } from 'react'
 import { useRouter } from 'next/navigation'
 import { games } from '@/lib/gameData'
 import { saveSelectedGame, loadGameState, clearGameState } from '@/lib/gameState'
+
+function subscribe() { return () => {} }
+function getServerSnapshot() { return false }
+function getClientSnapshot() {
+  const saved = loadGameState()
+  return saved !== null && saved.phase !== 'game_over' && saved.questionIndex < 10
+}
 
 const PIKACHU = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png'
 const EEVEE   = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png'
@@ -12,15 +19,9 @@ const SPRITES = [PIKACHU, EEVEE, PIKACHU, EEVEE, PIKACHU]
 export default function StartPage() {
   const router = useRouter()
   const [selectedGame, setSelectedGame] = useState(0)
-  const [hasSavedGame, setHasSavedGame] = useState(false)
-
-  useEffect(() => {
-    const saved = loadGameState()
-    if (saved && saved.phase !== 'game_over' && saved.questionIndex < 10) {
-      setHasSavedGame(true)
-      setSelectedGame(saved.gameIndex)
-    }
-  }, [])
+  const [userChangedGame, setUserChangedGame] = useState(false)
+  const hasSavedInStorage = useSyncExternalStore(subscribe, getClientSnapshot, getServerSnapshot)
+  const hasSavedGame = hasSavedInStorage && !userChangedGame
 
   function startGame() {
     clearGameState()
@@ -41,17 +42,7 @@ export default function StartPage() {
       {/* Main content */}
       <div className="flex flex-col items-center gap-9 z-10 px-8 text-center">
 
-        {/* Eyebrow label */}
-        <span
-          className="text-xs font-bold tracking-[0.35em] uppercase px-4 py-1.5 rounded-full"
-          style={{
-            background: 'rgba(250,204,21,0.1)',
-            color: 'rgba(250,204,21,0.8)',
-            border: '1px solid rgba(250,204,21,0.2)',
-          }}
-        >
-          Pokémon Kortspill
-        </span>
+       
 
         {/* Title — gradient text, no glow */}
         <h1
@@ -65,7 +56,7 @@ export default function StartPage() {
         >
           Vil du bli en
           <br />
-          Pokeilionær?
+          Pokemonær?
         </h1>
 
         {/* Pikachu / Eevee row */}
@@ -88,35 +79,37 @@ export default function StartPage() {
           ))}
         </div>
 
-        {/* Game selector */}
-        <div className="flex flex-col items-center gap-3 w-full max-w-md">
-          <label className="text-white/55 text-sm font-medium tracking-widest uppercase">
-            Velg spill
-          </label>
-          <select
-            value={selectedGame}
-            onChange={(e) => {
-              setSelectedGame(Number(e.target.value))
-              setHasSavedGame(false)
-            }}
-            className="w-full px-5 py-4 rounded-xl text-base font-semibold text-white cursor-pointer outline-none focus:ring-2 focus:ring-yellow-400/50"
-            style={{
-              background: 'rgba(255,255,255,0.06)',
-              border: '1.5px solid rgba(255,255,255,0.12)',
-              backdropFilter: 'blur(12px)',
-            }}
-          >
-            {games.map((game, idx) => (
-              <option
-                key={game.id}
-                value={idx}
-                style={{ background: '#0f0f2e', color: '#fff' }}
-              >
-                {game.name}
-              </option>
-            ))}
-          </select>
-        </div>
+        {/* Game selector — only shown when there are multiple games */}
+        {games.length > 1 && (
+          <div className="flex flex-col items-center gap-3 w-full max-w-md">
+            <label className="text-white/55 text-sm font-medium tracking-widest uppercase">
+              Velg spill
+            </label>
+            <select
+              value={selectedGame}
+              onChange={(e) => {
+                setSelectedGame(Number(e.target.value))
+                setUserChangedGame(true)
+              }}
+              className="w-full px-5 py-4 rounded-xl text-base font-semibold text-white cursor-pointer outline-none focus:ring-2 focus:ring-yellow-400/50"
+              style={{
+                background: 'rgba(255,255,255,0.06)',
+                border: '1.5px solid rgba(255,255,255,0.12)',
+                backdropFilter: 'blur(12px)',
+              }}
+            >
+              {games.map((game, idx) => (
+                <option
+                  key={game.id}
+                  value={idx}
+                  style={{ background: '#0f0f2e', color: '#fff' }}
+                >
+                  {game.name}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
 
         {/* Buttons */}
         <div className="flex flex-col items-center gap-3 w-full max-w-md">

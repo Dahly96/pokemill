@@ -34,7 +34,7 @@ export default function Timeline({
       <div className="relative mx-auto" style={{ width: '82%' }}>
 
         {/* Cards — absolutely positioned above the line */}
-        <div className="relative" style={{ height: 'clamp(42px, 7.5vw, 96px)', marginBottom: '10px' }}>
+        <div className="relative" style={{ height: 'clamp(64px, 11.5vw, 138px)', marginBottom: '10px' }}>
           {game.questions.map((q, i) => {
             const isActive = i === activeIndex
             const isWon = wonCards.includes(i)
@@ -53,8 +53,8 @@ export default function Timeline({
               >
                 <div
                   style={{
-                    width: 'clamp(26px, 4.8vw, 62px)',
-                    height: 'clamp(36px, 6.7vw, 87px)',
+                    width: 'clamp(40px, 7.5vw, 92px)',
+                    height: 'clamp(56px, 10.5vw, 129px)',
                     borderRadius: '5px',
                     overflow: 'hidden',
                     opacity: isFuture && !isSafeHaven ? 0.28 : 1,
@@ -123,8 +123,8 @@ export default function Timeline({
                 className="absolute top-1/2 -translate-y-1/2 -translate-x-1/2 rounded-full"
                 style={{ left: `${pct(i)}%`, zIndex: 1 }}
                 animate={{
-                  width: isActive ? 16 : 10,
-                  height: isActive ? 16 : 10,
+                  width: isActive ? 20 : 13,
+                  height: isActive ? 20 : 13,
                   backgroundColor: isActive
                     ? '#facc15'
                     : isWon

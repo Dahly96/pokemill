@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { useRouter } from 'next/navigation'
 import { motion, AnimatePresence } from 'framer-motion'
 import { games, type Question } from '@/lib/gameData'
@@ -22,6 +22,7 @@ type Phase =
   | 'revealing'     // answer selected, showing result
   | 'keep_or_next'
   | 'falling'       // card fading out before next question or end
+  | 'kept'          // player chose to keep their cards — show summary
   | 'celebration'
   | 'game_over'
 
@@ -175,11 +176,29 @@ function AnswerBtn({
 export default function GameClient() {
   const router = useRouter()
   const gameIdxRef = useRef(0)
-  const [game, setGame] = useState(games[0])
-  const [questionIndex, setQuestionIndex] = useState(0)
-  const [phase, setPhase] = useState<Phase>('start')
+
+  const [game] = useState(() => {
+    const saved = loadGameState()
+    const gIdx = saved ? saved.gameIndex : loadSelectedGame()
+    return games[gIdx] ?? games[0]
+  })
+
+  const [questionIndex, setQuestionIndex] = useState(() => {
+    const saved = loadGameState()
+    if (!saved || saved.phase === 'game_over') return 0
+    const g = games[saved.gameIndex] ?? games[0]
+    return saved.questionIndex < g.questions.length ? saved.questionIndex : 0
+  })
+
+  const [wonCards, setWonCards] = useState<number[]>(() => {
+    const saved = loadGameState()
+    if (!saved || saved.phase === 'game_over') return []
+    const g = games[saved.gameIndex] ?? games[0]
+    return saved.questionIndex < g.questions.length ? saved.wonCards : []
+  })
+
+  const [phase, setPhase] = useState<Phase>('show_front')
   const [selectedIdx, setSelectedIdx] = useState<number | null>(null)
-  const [wonCards, setWonCards] = useState<number[]>([])
   const [confetti, setConfetti] = useState<ConfettiPiece[]>([])
   const timers = useRef<ReturnType<typeof setTimeout>[]>([])
 
@@ -199,33 +218,25 @@ export default function GameClient() {
     saveGameState({ gameIndex: gameIdxRef.current, questionIndex, wonCards, phase })
   }, [phase, questionIndex, wonCards])
 
-  // Init
+  // Init: only side-effects (no setState), state is lazy-initialized above
   useEffect(() => {
     const saved = loadGameState()
     const gIdx = saved ? saved.gameIndex : loadSelectedGame()
     gameIdxRef.current = gIdx
     const g = games[gIdx] ?? games[0]
-    setGame(g)
-
-    if (saved && saved.phase !== 'game_over' && saved.questionIndex < g.questions.length) {
-      setQuestionIndex(saved.questionIndex)
-      setWonCards(saved.wonCards)
-      beginCard(saved.questionIndex)
-    } else {
+    if (!saved || saved.phase === 'game_over' || saved.questionIndex >= g.questions.length) {
       clearGameState()
-      beginCard(0)
     }
     return clearTimers
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   // ── Animation sequence ──────────────────────────────────────────────────
 
-  const beginCard = useCallback((qIdx: number) => {
+  function beginCard(qIdx: number) {
     setSelectedIdx(null)
     setQuestionIndex(qIdx)
     setPhase('show_front')
-  }, [])
+  }
 
   // Called when we're ready to flip (after show_front pause)
   function startFlip() {
@@ -272,8 +283,7 @@ export default function GameClient() {
 
   function handleKeep() {
     clearGameState()
-    setPhase('falling')
-    later(() => router.push('/'), 600)
+    setPhase('kept')
   }
 
   function handleNext() {
@@ -332,7 +342,7 @@ export default function GameClient() {
   const PORTRAIT_H = 'min(364px, calc(52vw * 1.4))'
 
   // Landscape card dimensions
-  const LANDSCAPE_W = 'min(900px, 84vw)'
+  const LANDSCAPE_W = 'min(860px, 76vw)'
   const LANDSCAPE_H = 'min(460px, 50vh)'
 
   // ── Render ──────────────────────────────────────────────────────────────
@@ -372,7 +382,7 @@ export default function GameClient() {
             WebkitTextFillColor: 'transparent',
           }}
         >
-          Vil du bli en Pokeilionær?
+          Vil du bli en Pokemonær?
         </h2>
         <div className="text-white/35 text-xs font-mono text-right max-w-30 truncate">
           {game.name}
@@ -385,12 +395,12 @@ export default function GameClient() {
           <motion.div
             className="fixed right-3 z-30 flex flex-col-reverse gap-1"
             style={{
-              top: '50%',
+              top: '72px',
               width: 'clamp(150px, 17vw, 220px)',
             }}
-            initial={{ opacity: 0, x: 20, y: '-50%' }}
-            animate={{ opacity: 1, x: 0, y: '-50%' }}
-            exit={{ opacity: 0, x: 20, y: '-50%' }}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: 20 }}
             transition={{ duration: 0.3 }}
           >
             {game.questions.map((qItem, i) => {
@@ -402,30 +412,43 @@ export default function GameClient() {
               return (
                 <div
                   key={i}
-                  className="flex items-center gap-1 rounded"
+                  className="flex items-center gap-2 rounded-lg"
                   style={{
-                    padding: '3px 10px',
+                    padding: '6px 14px',
                     background: isActive
-                      ? 'rgba(250,204,21,0.18)'
+                      ? 'rgba(250,204,21,0.22)'
                       : isWon
-                      ? 'rgba(22,163,74,0.12)'
+                      ? 'rgba(22,163,74,0.16)'
                       : isSafe && safeHavenPassed
-                      ? 'rgba(56,189,248,0.1)'
+                      ? 'rgba(56,189,248,0.12)'
                       : 'rgba(255,255,255,0.03)',
                     border: isActive
-                      ? '1px solid rgba(250,204,21,0.5)'
+                      ? '1.5px solid rgba(250,204,21,0.7)'
                       : isWon
-                      ? '1px solid rgba(74,222,128,0.22)'
+                      ? '1.5px solid rgba(74,222,128,0.4)'
                       : isSafe
-                      ? '1px solid rgba(56,189,248,0.22)'
-                      : '1px solid transparent',
+                      ? '1.5px solid rgba(56,189,248,0.4)'
+                      : '1.5px solid transparent',
+                    boxShadow: isActive
+                      ? '0 0 14px rgba(250,204,21,0.35), inset 0 0 10px rgba(250,204,21,0.08)'
+                      : isWon
+                      ? '0 0 8px rgba(74,222,128,0.2)'
+                      : isSafe && safeHavenPassed
+                      ? '0 0 8px rgba(56,189,248,0.2)'
+                      : 'none',
                   }}
                 >
-                  <span className="shrink-0 w-5 text-center" style={{ fontSize: 'clamp(9px, 1.1vw, 13px)' }}>
+                  <span
+                    className="shrink-0 w-6 text-center font-black"
+                    style={{
+                      fontSize: 'clamp(9px, 1.1vw, 13px)',
+                      color: isActive ? '#facc15' : isWon ? '#4ade80' : isSafe ? '#7dd3fc' : '#ffffff40',
+                    }}
+                  >
                     {isActive ? '▶' : isWon ? '✓' : isSafe ? '🛡' : `${i + 1}`}
                   </span>
                   <span
-                    className="truncate"
+                    className="truncate font-semibold"
                     style={{
                       fontSize: 'clamp(9px, 1.1vw, 13px)',
                       color: isActive
@@ -435,9 +458,9 @@ export default function GameClient() {
                         : isSafe
                         ? '#7dd3fc'
                         : isFuture
-                        ? '#ffffff18'
-                        : '#ffffff50',
-                      fontWeight: isActive || isSafe ? 700 : 400,
+                        ? '#ffffff20'
+                        : '#ffffff55',
+                      fontWeight: isActive ? 800 : isSafe ? 700 : isWon ? 600 : 400,
                     }}
                   >
                     {qItem.prizeName}
@@ -450,7 +473,7 @@ export default function GameClient() {
       </AnimatePresence>
 
       {/* ── Center area ── */}
-      <div className="fixed inset-0 flex items-center justify-center" style={{ zIndex: 40, pointerEvents: 'none' }}>
+      <div className="fixed inset-0 flex items-center justify-center" style={{ zIndex: 40, pointerEvents: 'none', paddingTop: '68px', paddingBottom: '180px' }}>
 
         {/* Portrait card: pops in at center, then flips out */}
         <AnimatePresence>
@@ -684,6 +707,105 @@ export default function GameClient() {
         )}
       </AnimatePresence>
 
+      {/* ── Kept overlay ── */}
+      <AnimatePresence>
+        {phase === 'kept' && (
+          <motion.div
+            className="fixed inset-0 z-50 flex flex-col items-center justify-center gap-8 px-6"
+            style={{ background: 'linear-gradient(160deg, #0a0f1e 0%, #0f1a2e 50%, #0a0f1e 100%)' }}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.4 }}
+          >
+            {/* Title */}
+            <motion.div
+              className="text-center"
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.15 }}
+            >
+              <h2
+                className="font-black leading-tight"
+                style={{
+                  fontSize: 'clamp(2rem, 5vw, 3.5rem)',
+                  background: 'linear-gradient(135deg, #ffffff 0%, #facc15 60%, #f59e0b 100%)',
+                  WebkitBackgroundClip: 'text',
+                  WebkitTextFillColor: 'transparent',
+                  filter: 'drop-shadow(0 2px 12px rgba(250,204,21,0.3))',
+                }}
+              >
+                Gratulerer!
+              </h2>
+              <p className="text-white/50 text-base mt-1">
+                Du forlater spillet med {wonCards.length} kort
+              </p>
+            </motion.div>
+
+            {/* Won cards row */}
+            <motion.div
+              className="flex flex-wrap justify-center gap-4"
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.3 }}
+            >
+              {wonCards.map((i, pos) => (
+                <motion.div
+                  key={i}
+                  initial={{ scale: 0.7, opacity: 0 }}
+                  animate={{ scale: 1, opacity: 1 }}
+                  transition={{ delay: 0.35 + pos * 0.07, type: 'spring', stiffness: 260, damping: 20 }}
+                  className="flex flex-col items-center gap-2"
+                >
+                  <div
+                    style={{
+                      width: 'clamp(70px, 10vw, 110px)',
+                      height: 'clamp(98px, 14vw, 154px)',
+                      borderRadius: '8px',
+                      overflow: 'hidden',
+                      border: '2px solid rgba(250,204,21,0.5)',
+                      boxShadow: '0 6px 20px rgba(0,0,0,0.6), 0 0 12px rgba(250,204,21,0.15)',
+                    }}
+                  >
+                    <img
+                      src={game.questions[i].imageUrl}
+                      alt={game.questions[i].prizeName}
+                      className="w-full h-full object-cover"
+                      crossOrigin="anonymous"
+                    />
+                  </div>
+                  <span
+                    className="text-center font-semibold leading-tight"
+                    style={{
+                      fontSize: 'clamp(9px, 1.2vw, 12px)',
+                      color: '#facc15',
+                      maxWidth: 'clamp(70px, 10vw, 110px)',
+                    }}
+                  >
+                    {game.questions[i].prizeName}
+                  </span>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* Back button */}
+            <motion.button
+              onClick={() => router.push('/')}
+              className="px-12 py-4 rounded-2xl font-black text-xl text-white transition-all hover:scale-105 active:scale-95"
+              style={{
+                background: 'linear-gradient(135deg, #b91c1c, #ef4444)',
+                boxShadow: '0 4px 18px rgba(0,0,0,0.5)',
+                letterSpacing: '0.03em',
+              }}
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ delay: 0.5 }}
+            >
+              Tilbake til start
+            </motion.button>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
       {/* ── Game over overlay ── */}
       <AnimatePresence>
         {phase === 'game_over' && (
@@ -699,7 +821,7 @@ export default function GameClient() {
                 background: 'linear-gradient(160deg, #1a0a0a, #2d0a0a)',
                 border: '1px solid rgba(239,68,68,0.3)',
                 boxShadow: '0 20px 50px rgba(0,0,0,0.6)',
-                maxWidth: '520px',
+                maxWidth: '680px',
                 width: '100%',
               }}
               initial={{ scale: 0.9 }}
@@ -717,19 +839,43 @@ export default function GameClient() {
                 )}
               </div>
               {safeCards().length > 0 && (
-                <div className="flex flex-wrap gap-2 justify-center">
-                  {safeCards().map((i) => (
-                    <span
+                <div className="flex flex-wrap justify-center gap-3">
+                  {safeCards().map((i, pos) => (
+                    <motion.div
                       key={i}
-                      className="px-3 py-1 rounded-full text-sm font-semibold"
-                      style={{
-                        background: 'rgba(56,189,248,0.12)',
-                        border: '1px solid rgba(56,189,248,0.3)',
-                        color: '#7dd3fc',
-                      }}
+                      initial={{ scale: 0.7, opacity: 0 }}
+                      animate={{ scale: 1, opacity: 1 }}
+                      transition={{ delay: 0.1 + pos * 0.07, type: 'spring', stiffness: 260, damping: 20 }}
+                      className="flex flex-col items-center gap-1"
                     >
-                      {game.questions[i].prizeName}
-                    </span>
+                      <div
+                        style={{
+                          width: 'clamp(60px, 9vw, 90px)',
+                          height: 'clamp(84px, 12.6vw, 126px)',
+                          borderRadius: '6px',
+                          overflow: 'hidden',
+                          border: '2px solid rgba(56,189,248,0.5)',
+                          boxShadow: '0 4px 14px rgba(0,0,0,0.5), 0 0 10px rgba(56,189,248,0.15)',
+                        }}
+                      >
+                        <img
+                          src={game.questions[i].imageUrl}
+                          alt={game.questions[i].prizeName}
+                          className="w-full h-full object-cover"
+                          crossOrigin="anonymous"
+                        />
+                      </div>
+                      <span
+                        className="text-center font-semibold leading-tight"
+                        style={{
+                          fontSize: 'clamp(8px, 1vw, 11px)',
+                          color: '#7dd3fc',
+                          maxWidth: 'clamp(60px, 9vw, 90px)',
+                        }}
+                      >
+                        {game.questions[i].prizeName}
+                      </span>
+                    </motion.div>
                   ))}
                 </div>
               )}

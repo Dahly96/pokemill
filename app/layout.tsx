@@ -8,8 +8,8 @@ const geist = Geist({
 })
 
 export const metadata: Metadata = {
-  title: 'Vil du bli en Pokeilionær?',
-  description: 'Pokémon kortspill – Hvem vil bli en Pokeilionær?',
+  title: 'Vil du bli en Pokemonær?',
+  description: 'Pokémon kortspill – Hvem vil bli en Pokemonær?',
 }
 
 export default function RootLayout({
