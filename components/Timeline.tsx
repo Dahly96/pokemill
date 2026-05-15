@@ -73,7 +73,7 @@ export default function Timeline({
                     src={q.imageUrl}
                     alt={`Kort ${i + 1}`}
                     className="w-full h-full object-cover"
-                    crossOrigin="anonymous"
+
                     onError={(e) => {
                       const el = e.currentTarget
                       el.style.display = 'none'

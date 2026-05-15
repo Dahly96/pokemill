@@ -100,7 +100,7 @@ function CardImg({
       alt={alt}
       className={`w-full h-full object-cover ${className}`}
       style={style}
-      crossOrigin="anonymous"
+
       onError={() => setErr(true)}
     />
   )
@@ -574,7 +574,7 @@ export default function GameClient() {
                     <img
                       src={q.questionImageUrl}
                       alt="Hvem er denne?"
-                      crossOrigin="anonymous"
+
                       style={{
                         height: 'clamp(52px, 7vw, 90px)',
                         width: 'auto',
@@ -770,7 +770,7 @@ export default function GameClient() {
                       src={game.questions[i].imageUrl}
                       alt={game.questions[i].prizeName}
                       className="w-full h-full object-cover"
-                      crossOrigin="anonymous"
+
                     />
                   </div>
                   <span
@@ -862,7 +862,7 @@ export default function GameClient() {
                           src={game.questions[i].imageUrl}
                           alt={game.questions[i].prizeName}
                           className="w-full h-full object-cover"
-                          crossOrigin="anonymous"
+
                         />
                       </div>
                       <span

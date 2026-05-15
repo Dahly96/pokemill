@@ -66,7 +66,7 @@ export default function StartPage() {
               key={i}
               src={src}
               alt={i % 2 === 0 ? 'Pikachu' : 'Eevee'}
-              crossOrigin="anonymous"
+
               style={{
                 width: i === 2 ? '52px' : '38px',
                 height: i === 2 ? '52px' : '38px',
