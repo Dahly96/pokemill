@@ -249,7 +249,7 @@ export default function GameClient() {
 
   useEffect(() => {
     if (phase === 'show_front') {
-      const id = later(startFlip, 700)
+      const id = later(startFlip, 1400)
       return () => clearTimeout(id)
     }
   }, [phase])
@@ -564,7 +564,7 @@ export default function GameClient() {
 
                 {/* Question + silhouette */}
                 <div
-                  className="shrink-0 flex items-center gap-4 px-4 py-3 rounded-2xl"
+                  className="shrink-0 flex items-center justify-center gap-4 px-4 py-3 rounded-2xl"
                   style={{
                     background: 'rgba(250,204,21,0.07)',
                     border: '1px solid rgba(250,204,21,0.2)',
@@ -574,20 +574,20 @@ export default function GameClient() {
                     <img
                       src={q.questionImageUrl}
                       alt="Hvem er denne?"
-
                       style={{
+                        flexShrink: 0,
                         height: 'clamp(52px, 7vw, 90px)',
                         width: 'auto',
                         imageRendering: 'pixelated',
                         filter:
-                          q.isSilhouette && phase !== 'keep_or_next'
+                          q.isSilhouette && phase !== 'revealing' && phase !== 'keep_or_next'
                             ? 'brightness(0) saturate(0)'
                             : 'none',
                         transition: 'filter 0.6s ease',
                       }}
                     />
                   )}
-                  <p className="text-white font-black text-center flex-1"
+                  <p className="text-white font-black text-center"
                      style={{ fontSize: 'clamp(1rem, 2.2vw, 1.5rem)', lineHeight: 1.3 }}>
                     {q.question}
                   </p>
