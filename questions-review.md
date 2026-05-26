@@ -24,11 +24,11 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Sylveon
 - D) Glaceon
 
-**Q4** Hva heter Gym-lederen i Cerulean City i Kanto, som spesialiserer seg på vanntype?
-- A) Erika
-- B) **Misty ✓**
-- C) Sabrina
-- D) Lorelei
+**Q4** Hva er det offisielle Pokédex-nummeret til Gyarados?
+- A) #128
+- B) #129
+- C) **#130 ✓**
+- D) #131
 
 **Q5 🛡️** Hva heter den kriminelle organisasjonen i Kanto-regionen?
 - A) **Team Rocket ✓**
@@ -69,198 +69,6 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 ---
 
 ## Spill 2
-
-**Q1** Hvilken type er den legendære Pokémon Entei?
-- A) Vann
-- B) **Ild ✓**
-- C) Psykisk
-- D) Normal
-
-**Q2** Hva heter Pikachu sin trener i Pokémon-anime-serien?
-- A) Gary
-- B) Brock
-- C) Misty
-- D) **Ash ✓**
-
-**Q3** *(Silhuett)* Hvem er denne Pokémon?
-- A) Wailord
-- B) Lugia
-- C) Suicune
-- D) **Kyogre ✓**
-
-**Q4** I hvilken generasjon ble Mega Evolution introdusert som spillmekanikk?
-- A) Generasjon 4 (Diamond/Pearl)
-- B) Generasjon 5 (Black/White)
-- C) **Generasjon 6 (X/Y) ✓**
-- D) Generasjon 7 (Sun/Moon)
-
-**Q5 🛡️** I den første Pokémon-filmen (1998) – hvem er den viktigste skurken?
-- A) Giovanni
-- B) Jessie og James
-- C) **Mewtwo ✓**
-- D) Team Aqua
-
-**Q6** *(Geoguesser)* Du vandrer gjennom en mørk grotte i Kanto uten kunstig lys – du er på vei fra Lavender Town mot Cerulean City. Hva heter grotten?
-- A) Seafoam Islands
-- B) Mt. Moon
-- C) **Rock Tunnel ✓**
-- D) Victory Road
-
-**Q7** Hva er det offisielle Pokédex-nummeret til Snorlax?
-- A) #131
-- B) #137
-- C) #141
-- D) **#143 ✓**
-
-**Q8** Hva er typeforskjellen mellom Mega Charizard X og Mega Charizard Y?
-- A) X er Ild/Flyging, Y er Ild/Drage
-- B) **X er Ild/Drage, Y er Ild/Flyging ✓**
-- C) Begge er Ild/Flyging
-- D) X er Ild/Psykisk, Y er Ild/Drage
-
-**Q9** *(Villain lore)* I Pokémon HeartGold og SoulSilver – hvilken bys radiosendingtårn tok Team Rocket over for å sende et signal til den savnede lederen Giovanni?
-- A) Ecruteak City
-- B) Mahogany Town
-- C) Olivine City
-- D) **Goldenrod City ✓**
-
-**Q10** Hva er Charizard sitt originale japanske navn?
-- A) Hitokage
-- B) Fushigidane
-- C) Zenigame
-- D) **Lizardon ✓**
-
----
-
-## Spill 3
-
-**Q1** Hva heter byen Ash Ketchum kommer fra?
-- A) Viridian City
-- B) Cerulean City
-- C) **Pallet Town ✓**
-- D) Pewter City
-
-**Q2** Hvilken legendær Pokémon dukket opp i den absolutt første episoden av Pokémon-anime-serien – lenge før Gold og Silver ble lansert internasjonalt?
-- A) Lugia
-- B) Entei
-- C) Suicune
-- D) **Ho-Oh ✓**
-
-**Q3** *(Silhuett)* Hvem er denne Pokémon?
-- A) Deoxys
-- B) Mew
-- C) Alakazam
-- D) **Mewtwo ✓**
-
-**Q4** Hva heter Gym-lederen i Petalburg City i Pokémon Ruby og Sapphire, og hva er hans spesielle tilknytning til spillerkarakteren?
-- A) Wallace – den regjerende Pokémon Champion
-- B) Brawly – driver et treningsstudio i Dewford Town
-- C) **Norman – han er spillerens far ✓**
-- D) Steven – sønn av Devon Corp.-presidenten
-
-**Q5 🛡️** Hva er Team Aquas overordnede mål i Pokémon Sapphire?
-- A) Stjele alle sjeldne Pokémon for å selge dem
-- B) Ta over Pokémon League og bli Champion
-- C) **Vekke Kyogre for å utvide havene og dekke verden i vann ✓**
-- D) Finne og kontrollere den mektigste Pokémon i universet
-
-**Q6** *(Geoguesser)* Du ankommer en by i Johto dominert av to gamle tårn – ett brent og ett hellig. Gym-lederen Morty og hans Spøkelse-Pokémon venter inne. Hvilken by er du i?
-- A) Mahogany Town
-- B) **Ecruteak City ✓**
-- C) Goldenrod City
-- D) Violet City
-
-**Q7** Hva heter det berømte spøkelsesfylte tårnet i Lavender Town i Pokémon Red og Blue?
-- A) Ghost Tower
-- B) **Pokémon Tower ✓**
-- C) Shadow Spire
-- D) Silph Tower
-
-**Q8** Hvilken Pokémon er beryktet for å gjøre kampen mot Gym-leder Whitney i Pokémon Gold og Silver til en av de vanskeligste i serien, og hva er den kjent for?
-- A) Clefable – bruker Metronome tilfeldig
-- B) **Miltank – bruker Rollout og Milk Drink ✓**
-- C) Blissey – har ekstremt høy HP
-- D) Togetic – bruker Metronome og Softboiled
-
-**Q9** Hva er det offisielle Pokédex-nummeret til Latios, ett av de to Eon-legendene fra Hoenn?
-- A) #379
-- B) #380
-- C) **#381 ✓**
-- D) #382
-
-**Q10** Hva heter den berømte glitch-Pokémonen som dukket opp langs Cinnabar Islands kystlinje i Pokémon Red og Blue?
-- A) ErrorMon
-- B) **MissingNo. ✓**
-- C) Glitchmon
-- D) #000
-
----
-
-## Spill 4
-
-**Q1** Hva slags type er Charmander?
-- A) Vann
-- B) Gress
-- C) **Ild ✓**
-- D) Normal
-
-**Q2** Hva heter den tredje og siste formen til Squirtle?
-- A) Wartortle
-- B) **Blastoise ✓**
-- C) Lapras
-- D) Feraligatr
-
-**Q3** *(Silhuett)* Hvem er denne Pokémon?
-- A) Haunter
-- B) Clefable
-- C) **Gengar ✓**
-- D) Nidoking
-
-**Q4** Hvilken Pokémon er det IKKE mulig å utvikle fra Eevee?
-- A) Flareon
-- B) Vaporeon
-- C) Espeon
-- D) **Togekiss ✓**
-
-**Q5 🛡️** Hva er typekombinasjonen til Gyarados?
-- A) Vann/Drage
-- B) **Vann/Flyging ✓**
-- C) Vann/Normal
-- D) Vann/Is
-
-**Q6** *(Geoguesser)* Du ankommer en liten, uhyggelig by i Kanto. Bakgrunnsmusikken er blitt en internett-legende. Et gammelt tårn fylt med spøkelse-Pokémon ruver over husene. Hvilken by er du i?
-- A) Pallet Town
-- B) Cerulean City
-- C) **Lavender Town ✓**
-- D) Viridian City
-
-**Q7** Hva er de tre legendære fuglene i Kanto-regionen?
-- A) Lugia, Ho-Oh og Entei
-- B) **Zapdos, Moltres og Articuno ✓**
-- C) Raikou, Suicune og Entei
-- D) Mew, Mewtwo og Lugia
-
-**Q8** I Pokémon Gold og Silver – hvem møter du som den hemmelige sluttutfordringen på toppen av Mt. Silver, etter å ha beseiret alle 16 gym-lederne?
-- A) Professor Oak
-- B) Lance
-- C) Giovanni
-- D) **Red ✓**
-
-**Q9** Hva er det offisielle Pokédex-nummeret til Mewtwo?
-- A) #149
-- B) #151
-- C) #152
-- D) **#150 ✓**
-
-**Q10** Hvilken ikke-legendær Pokémon fra Kanto (Gen 1) har den høyeste totale basstatistikken?
-- A) Snorlax
-- B) Starmie
-- C) **Dragonite ✓**
-- D) Rhydon
-
----
-
-## Spill 5
 
 **Q1** Hva heter den første Pokémon i Pokédex (nummer 001)?
 - A) Pikachu
@@ -324,6 +132,198 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 
 ---
 
+## Spill 3
+
+**Q1** Hvilken type er den legendære Pokémon Entei?
+- A) Vann
+- B) **Ild ✓**
+- C) Psykisk
+- D) Normal
+
+**Q2** Hva heter Pikachu sin trener i Pokémon-anime-serien?
+- A) Gary
+- B) Brock
+- C) Misty
+- D) **Ash ✓**
+
+**Q3** *(Silhuett)* Hvem er denne Pokémon?
+- A) Wailord
+- B) Lugia
+- C) Suicune
+- D) **Kyogre ✓**
+
+**Q4** I hvilken generasjon ble Mega Evolution introdusert som spillmekanikk?
+- A) Generasjon 4 (Diamond/Pearl)
+- B) Generasjon 5 (Black/White)
+- C) **Generasjon 6 (X/Y) ✓**
+- D) Generasjon 7 (Sun/Moon)
+
+**Q5 🛡️** I den første Pokémon-filmen (1998) – hvem er den viktigste skurken?
+- A) Giovanni
+- B) Jessie og James
+- C) **Mewtwo ✓**
+- D) Team Aqua
+
+**Q6** *(Geoguesser)* Du vandrer gjennom en mørk grotte i Kanto uten kunstig lys – du er på vei fra Lavender Town mot Cerulean City. Hva heter grotten?
+- A) Seafoam Islands
+- B) Mt. Moon
+- C) **Rock Tunnel ✓**
+- D) Victory Road
+
+**Q7** Hva er det offisielle Pokédex-nummeret til Snorlax?
+- A) #131
+- B) #137
+- C) #141
+- D) **#143 ✓**
+
+**Q8** Hva er typeforskjellen mellom Mega Charizard X og Mega Charizard Y?
+- A) X er Ild/Flyging, Y er Ild/Drage
+- B) **X er Ild/Drage, Y er Ild/Flyging ✓**
+- C) Begge er Ild/Flyging
+- D) X er Ild/Psykisk, Y er Ild/Drage
+
+**Q9** *(Villain lore)* I Pokémon HeartGold og SoulSilver – hvilken bys radiosendingtårn tok Team Rocket over for å sende et signal til den savnede lederen Giovanni?
+- A) Ecruteak City
+- B) Mahogany Town
+- C) Olivine City
+- D) **Goldenrod City ✓**
+
+**Q10** Hva er Charizard sitt originale japanske navn?
+- A) Hitokage
+- B) Fushigidane
+- C) Zenigame
+- D) **Lizardon ✓**
+
+---
+
+## Spill 4
+
+**Q1** Hva heter byen Ash Ketchum kommer fra?
+- A) Viridian City
+- B) Cerulean City
+- C) **Pallet Town ✓**
+- D) Pewter City
+
+**Q2** Hvilken legendær Pokémon dukket opp i den absolutt første episoden av Pokémon-anime-serien – lenge før Gold og Silver ble lansert internasjonalt?
+- A) Lugia
+- B) Entei
+- C) Suicune
+- D) **Ho-Oh ✓**
+
+**Q3** *(Silhuett)* Hvem er denne Pokémon?
+- A) Deoxys
+- B) Mew
+- C) Alakazam
+- D) **Mewtwo ✓**
+
+**Q4** Hva heter Gym-lederen i Petalburg City i Pokémon Ruby og Sapphire, og hva er hans spesielle tilknytning til spillerkarakteren?
+- A) Wallace – den regjerende Pokémon Champion
+- B) Brawly – driver et treningsstudio i Dewford Town
+- C) **Norman – han er spillerens far ✓**
+- D) Steven – sønn av Devon Corp.-presidenten
+
+**Q5 🛡️** Hva er Team Aquas overordnede mål i Pokémon Sapphire?
+- A) Stjele alle sjeldne Pokémon for å selge dem
+- B) Ta over Pokémon League og bli Champion
+- C) **Vekke Kyogre for å utvide havene og dekke verden i vann ✓**
+- D) Finne og kontrollere den mektigste Pokémon i universet
+
+**Q6** *(Geoguesser)* Du ankommer en by i Johto dominert av to gamle tårn – ett brent og ett hellig. Gym-lederen Morty og hans Spøkelse-Pokémon venter inne. Hvilken by er du i?
+- A) Mahogany Town
+- B) **Ecruteak City ✓**
+- C) Goldenrod City
+- D) Violet City
+
+**Q7** Hva heter det berømte spøkelsesfylte tårnet i Lavender Town i Pokémon Red og Blue?
+- A) Ghost Tower
+- B) **Pokémon Tower ✓**
+- C) Shadow Spire
+- D) Silph Tower
+
+**Q8** Hvilken Pokémon er beryktet for å gjøre kampen mot Gym-leder Whitney i Pokémon Gold og Silver til en av de vanskeligste i serien, og hva er den kjent for?
+- A) Clefable – bruker Metronome tilfeldig
+- B) **Miltank – bruker Rollout og Milk Drink ✓**
+- C) Blissey – har ekstremt høy HP
+- D) Togetic – bruker Metronome og Softboiled
+
+**Q9** Hva er det offisielle Pokédex-nummeret til Latios, ett av de to Eon-legendene fra Hoenn?
+- A) #379
+- B) #380
+- C) **#381 ✓**
+- D) #382
+
+**Q10** Hva heter den berømte glitch-Pokémonen som dukket opp langs Cinnabar Islands kystlinje i Pokémon Red og Blue?
+- A) ErrorMon
+- B) **MissingNo. ✓**
+- C) Glitchmon
+- D) #000
+
+---
+
+## Spill 5
+
+**Q1** Hva slags type er Charmander?
+- A) Vann
+- B) Gress
+- C) **Ild ✓**
+- D) Normal
+
+**Q2** Hva heter den tredje og siste formen til Squirtle?
+- A) Wartortle
+- B) **Blastoise ✓**
+- C) Lapras
+- D) Feraligatr
+
+**Q3** *(Silhuett)* Hvem er denne Pokémon?
+- A) Haunter
+- B) Clefable
+- C) **Gengar ✓**
+- D) Nidoking
+
+**Q4** Hvilken Pokémon er det IKKE mulig å utvikle fra Eevee?
+- A) Flareon
+- B) Vaporeon
+- C) Espeon
+- D) **Togekiss ✓**
+
+**Q5 🛡️** Hva er typekombinasjonen til Gyarados?
+- A) Vann/Drage
+- B) **Vann/Flyging ✓**
+- C) Vann/Normal
+- D) Vann/Is
+
+**Q6** *(Geoguesser)* Du ankommer en liten, uhyggelig by i Kanto. Bakgrunnsmusikken er blitt en internett-legende. Et gammelt tårn fylt med spøkelse-Pokémon ruver over husene. Hvilken by er du i?
+- A) Pallet Town
+- B) Cerulean City
+- C) **Lavender Town ✓**
+- D) Viridian City
+
+**Q7** Hva er de tre legendære fuglene i Kanto-regionen?
+- A) Lugia, Ho-Oh og Entei
+- B) **Zapdos, Moltres og Articuno ✓**
+- C) Raikou, Suicune og Entei
+- D) Mew, Mewtwo og Lugia
+
+**Q8** I Pokémon Gold og Silver – hvem møter du som den hemmelige sluttutfordringen på toppen av Mt. Silver, etter å ha beseiret alle 16 gym-lederne?
+- A) Professor Oak
+- B) Lance
+- C) Giovanni
+- D) **Red ✓**
+
+**Q9** Hva er det offisielle Pokédex-nummeret til Mewtwo?
+- A) #149
+- B) #151
+- C) #152
+- D) **#150 ✓**
+
+**Q10** Hvilken ikke-legendær Pokémon fra Kanto (Gen 1) har den høyeste totale basstatistikken?
+- A) Snorlax
+- B) Starmie
+- C) **Dragonite ✓**
+- D) Rhydon
+
+---
+
 ## Spill 6
 
 **Q1** Hva heter de tre startpokemonene i Pokémon Gold og Silver?
@@ -368,11 +368,11 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) **Secret Base ✓**
 - D) Poffin House
 
-**Q8** Hva heter Gym-lederen i Fuchsia City i Pokémon Red og Blue, kjent for sine Gift-type Pokémon og ninja-teknikker?
-- A) Blaine
-- B) Janine
-- C) **Koga ✓**
-- D) Brock
+**Q8** Hva er typekombinasjonen til Blaziken, den endelige utviklingsformen til startpokemonen Torchic i Pokémon Ruby og Sapphire?
+- A) Ild/Normal
+- B) **Ild/Kamp ✓**
+- C) Ild/Flyging
+- D) Ild/Drage
 
 **Q9** Hva er det offisielle Pokédex-nummeret til det mytiske Pokémon Celebi, kjent for å reise gjennom tid?
 - A) #248
@@ -490,11 +490,11 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) **Dynamax og Gigantamax ✓**
 - D) Terastallize
 
-**Q7** Hvilken Pokémon-region er basert på New York-staten og New York City?
-- A) Galar
-- B) Kalos
-- C) **Unova ✓**
-- D) Alola
+**Q7** Hva er det offisielle Pokédex-nummeret til Lucario, den populære Kamp/Stål-typen fra Sinnoh?
+- A) #445
+- B) #447
+- C) **#448 ✓**
+- D) #453
 
 **Q8** Hva er det som gjør Pokémon Scarlet og Violet (Paldea) historisk annerledes enn de fleste tidligere hoved-Pokémon-spill?
 - A) Det var det første Pokémon-spillet med Mega Evolution
@@ -524,11 +524,11 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) **Common ✓**
 - D) Ultra Rare
 
-**Q2** Hva heter professoren som gir startpokemoner til spillere i Kanto-regionen?
-- A) Professor Elm
-- B) Professor Birch
-- C) **Professor Oak ✓**
-- D) Professor Rowan
+**Q2** Hva er det offisielle Pokédex-nummeret til Charizard – ett av de mest ettertraktede Pokémon-kortene i TCG-historien?
+- A) #4
+- B) #5
+- C) **#6 ✓**
+- D) #9
 
 **Q3** *(Silhuett)* Hvem er denne Pokémon?
 - A) Salamence
