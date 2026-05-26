@@ -24,7 +24,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Sylveon
 - D) Glaceon
 
-**Q4** Hva heter Gym-lederen i Cerulean City som spesialiserer seg på vanntype?
+**Q4** Hva heter Gym-lederen i Cerulean City i Kanto, som spesialiserer seg på vanntype?
 - A) Erika
 - B) **Misty ✓**
 - C) Sabrina
@@ -83,10 +83,10 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - D) **Ash ✓**
 
 **Q3** *(Silhuett)* Hvem er denne Pokémon?
-- A) Flygon
-- B) Salamence
-- C) Dragonite
-- D) **Rayquaza ✓**
+- A) Wailord
+- B) Lugia
+- C) Suicune
+- D) **Kyogre ✓**
 
 **Q4** I hvilken generasjon ble Mega Evolution introdusert som spillmekanikk?
 - A) Generasjon 4 (Diamond/Pearl)
@@ -115,8 +115,8 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 **Q8** Hva er typeforskjellen mellom Mega Charizard X og Mega Charizard Y?
 - A) X er Ild/Flyging, Y er Ild/Drage
 - B) **X er Ild/Drage, Y er Ild/Flyging ✓**
-- C) Begge er Ild/Drage
-- D) X er Ild/Flyging, Y er Ild/Flyging
+- C) Begge er Ild/Flyging
+- D) X er Ild/Psykisk, Y er Ild/Drage
 
 **Q9** *(Villain lore)* I Pokémon HeartGold og SoulSilver – hvilken bys radiosendingtårn tok Team Rocket over for å sende et signal til den savnede lederen Giovanni?
 - A) Ecruteak City
@@ -134,11 +134,11 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 
 ## Spill 3
 
-**Q1** Hvilken legendærisk Pokémon pryder coveret av Pokémon Sapphire?
-- A) Groudon
-- B) Rayquaza
-- C) **Kyogre ✓**
-- D) Deoxys
+**Q1** Hva heter byen Ash Ketchum kommer fra?
+- A) Viridian City
+- B) Cerulean City
+- C) **Pallet Town ✓**
+- D) Pewter City
 
 **Q2** Hvilken legendær Pokémon dukket opp i den absolutt første episoden av Pokémon-anime-serien – lenge før Gold og Silver ble lansert internasjonalt?
 - A) Lugia
@@ -152,7 +152,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Alakazam
 - D) **Mewtwo ✓**
 
-**Q4** Hva heter Gym-lederen i Petalburg City, og hva er hans spesielle tilknytning til spillerkarakteren?
+**Q4** Hva heter Gym-lederen i Petalburg City i Pokémon Ruby og Sapphire, og hva er hans spesielle tilknytning til spillerkarakteren?
 - A) Wallace – den regjerende Pokémon Champion
 - B) Brawly – driver et treningsstudio i Dewford Town
 - C) **Norman – han er spillerens far ✓**
@@ -170,13 +170,13 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Goldenrod City
 - D) Violet City
 
-**Q7** Hva heter det berømt spøkelsesfylte tårnet i Lavender Town?
+**Q7** Hva heter det berømte spøkelsesfylte tårnet i Lavender Town i Pokémon Red og Blue?
 - A) Ghost Tower
 - B) **Pokémon Tower ✓**
 - C) Shadow Spire
 - D) Silph Tower
 
-**Q8** Hvilken Pokémon er beryktet for å gjøre kampen mot Gym-leder Whitney til en av de vanskeligste i serien, og hva er den kjent for?
+**Q8** Hvilken Pokémon er beryktet for å gjøre kampen mot Gym-leder Whitney i Pokémon Gold og Silver til en av de vanskeligste i serien, og hva er den kjent for?
 - A) Clefable – bruker Metronome tilfeldig
 - B) **Miltank – bruker Rollout og Milk Drink ✓**
 - C) Blissey – har ekstremt høy HP
