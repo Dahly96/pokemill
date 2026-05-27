@@ -18,17 +18,17 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) **Gary Oak ✓**
 - D) Tracey
 
-**Q3** *(Silhuett)* Hvem er denne Pokémon?
+**Q3** Hvem er denne Pokémon?
 - A) Espeon
 - B) **Umbreon ✓**
 - C) Sylveon
 - D) Glaceon
 
-**Q4** Hva er det offisielle Pokédex-nummeret til Gyarados?
-- A) #128
-- B) #129
-- C) **#130 ✓**
-- D) #131
+**Q4** Hvor mange kort er det i det originale engelske Pokémon Base Set fra 1999?
+- A) 80
+- B) 96
+- C) **102 ✓**
+- D) 110
 
 **Q5 🛡️** Hva heter den kriminelle organisasjonen i Kanto-regionen?
 - A) **Team Rocket ✓**
@@ -36,7 +36,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Team Aqua
 - D) Team Skull
 
-**Q6** *(Geoguesser)* Du ankommer en liten by i Hoenn med dampende varme kilder. Gym-lederen Flannery venter inne med sine Ild-type Pokémon. Hvilken by er du i?
+**Q6** Du ankommer en liten by i Hoenn med dampende varme kilder. Gym-lederen Flannery venter inne med sine Ild-type Pokémon. Hvilken by er du i?
 - A) Mossdeep City
 - B) **Lavaridge Town ✓**
 - C) Fallarbor Town
@@ -54,7 +54,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Deoxys er den endelige antagonisten du må beseire
 - D) Du velger side mellom Team Magma og Team Aqua
 
-**Q9** *(Geoguesser/lore)* I Pokémon Red og Blue finnes det en kamphall som ikke er en offisiell Gym. Beseiringen gir deg enten Hitmonlee eller Hitmonchan. Hva heter stedet og i hvilken by?
+**Q9** I Pokémon Red og Blue finnes det en kamphall som ikke er en offisiell Gym. Å vinne gir deg valget mellom Hitmonlee og Hitmonchan. Hva heter stedet og i hvilken by?
 - A) Battle Hall i Cerulean City
 - B) **Fighting Dojo i Saffron City ✓**
 - C) Combat Arena i Fuchsia City
@@ -76,23 +76,23 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Charmander
 - D) Squirtle
 
-**Q2** Hva er typen til Squirtle?
-- A) Ild
-- B) **Vann ✓**
-- C) Gress
-- D) Normal
+**Q2** Hva heter den første Gym-lederen i Pokémon Red og Blue?
+- A) Misty
+- B) **Brock ✓**
+- C) Lt. Surge
+- D) Erika
 
-**Q3** *(Silhuett)* Hvem er denne Pokémon?
+**Q3** Hvem er denne Pokémon?
 - A) Growlithe
 - B) Vulpix
 - C) Arcanine
 - D) **Eevee ✓**
 
-**Q4** Hva er den evolusjonerte formen av Magikarp?
-- A) Lapras
-- B) Seadra
-- C) **Gyarados ✓**
-- D) Kingdra
+**Q4** Hva heter den siste evolusjonerte formen av Geodude?
+- A) Graveler
+- B) Onix
+- C) Rhydon
+- D) **Golem ✓**
 
 **Q5 🛡️** Hva er det første Pokémon Ash fanger i anime-serien (ikke medregnet Pikachu)?
 - A) Pidgey
@@ -112,17 +112,17 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) **Clefairy ✓**
 - D) Gengar
 
-**Q8** *(Geoguesser)* Du er i Kanto og finner et kasino kalt «Game Corner» i en travel by. Rett under det er Team Rockets hemmelige base gjemt. Hvilken by er du i?
+**Q8** Du er i Kanto og finner et kasino kalt «Game Corner» i en travel by. Rett under det er Team Rockets hemmelige base gjemt. Hvilken by er du i?
 - A) Vermilion City
 - B) Lavender Town
 - C) **Celadon City ✓**
 - D) Saffron City
 
-**Q9** Hva er det offisielle Pokédex-nummeret til Eevee?
-- A) #131
-- B) #132
-- C) **#133 ✓**
-- D) #134
+**Q9** Hva heter selskapet som opprinnelig utgav det engelske Pokémon TCG fra 1999 til 2003, før The Pokémon Company overtok?
+- A) Nintendo
+- B) Konami
+- C) Hasbro
+- D) **Wizards of the Coast ✓**
 
 **Q10** Hvilken versjon av Pokémon ble opprinnelig utgitt i Japan – med et annet fargetema enn det internasjonale markedet fikk?
 - A) Pokémon Red og Yellow
@@ -146,7 +146,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Misty
 - D) **Ash ✓**
 
-**Q3** *(Silhuett)* Hvem er denne Pokémon?
+**Q3** Hvem er denne Pokémon?
 - A) Wailord
 - B) Lugia
 - C) Suicune
@@ -164,17 +164,17 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) **Mewtwo ✓**
 - D) Team Aqua
 
-**Q6** *(Geoguesser)* Du vandrer gjennom en mørk grotte i Kanto uten kunstig lys – du er på vei fra Lavender Town mot Cerulean City. Hva heter grotten?
+**Q6** Du vandrer gjennom en mørk grotte i Kanto uten kunstig lys – du er på vei fra Lavender Town mot Cerulean City. Hva heter grotten?
 - A) Seafoam Islands
 - B) Mt. Moon
 - C) **Rock Tunnel ✓**
 - D) Victory Road
 
-**Q7** Hva er det offisielle Pokédex-nummeret til Snorlax?
-- A) #131
-- B) #137
-- C) #141
-- D) **#143 ✓**
+**Q7** Hva heter den første engelske Pokémon TCG-utvidelsen som ble utgitt etter det originale Base Set i 1999?
+- A) Fossil
+- B) Team Rocket
+- C) Base Set 2
+- D) **Jungle ✓**
 
 **Q8** Hva er typeforskjellen mellom Mega Charizard X og Mega Charizard Y?
 - A) X er Ild/Flyging, Y er Ild/Drage
@@ -182,17 +182,17 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Begge er Ild/Flyging
 - D) X er Ild/Psykisk, Y er Ild/Drage
 
-**Q9** *(Villain lore)* I Pokémon HeartGold og SoulSilver – hvilken bys radiosendingtårn tok Team Rocket over for å sende et signal til den savnede lederen Giovanni?
+**Q9** I Pokémon HeartGold og SoulSilver – hvilken bys radiosendingtårn tok Team Rocket over for å sende et signal til den savnede lederen Giovanni?
 - A) Ecruteak City
 - B) Mahogany Town
 - C) Olivine City
 - D) **Goldenrod City ✓**
 
-**Q10** Hva er Charizard sitt originale japanske navn?
-- A) Hitokage
-- B) Fushigidane
-- C) Zenigame
-- D) **Lizardon ✓**
+**Q10** Hva er Gary Oak sitt originale japanske navn i anime-serien, og hvem er han oppkalt etter?
+- A) Hiroshi – oppkalt etter Hiroshi Yamauchi, tidligere Nintendo-sjef
+- B) Masato – oppkalt etter en av Pokémons originale manusforfattere
+- C) **Shigeru – oppkalt etter Shigeru Miyamoto, skaperen av Mario og Zelda ✓**
+- D) Kenji – oppkalt etter Kenji Watanabe, Pokémon-designer
 
 ---
 
@@ -210,7 +210,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Suicune
 - D) **Ho-Oh ✓**
 
-**Q3** *(Silhuett)* Hvem er denne Pokémon?
+**Q3** Hvem er denne Pokémon?
 - A) Deoxys
 - B) Mew
 - C) Alakazam
@@ -228,7 +228,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) **Vekke Kyogre for å utvide havene og dekke verden i vann ✓**
 - D) Finne og kontrollere den mektigste Pokémon i universet
 
-**Q6** *(Geoguesser)* Du ankommer en by i Johto dominert av to gamle tårn – ett brent og ett hellig. Gym-lederen Morty og hans Spøkelse-Pokémon venter inne. Hvilken by er du i?
+**Q6** Du ankommer en by i Johto dominert av to gamle tårn – ett brent og ett hellig. Gym-lederen Morty og hans Spøkelse-Pokémon venter inne. Hvilken by er du i?
 - A) Mahogany Town
 - B) **Ecruteak City ✓**
 - C) Goldenrod City
@@ -246,17 +246,17 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Blissey – har ekstremt høy HP
 - D) Togetic – bruker Metronome og Softboiled
 
-**Q9** Hva er det offisielle Pokédex-nummeret til Latios, ett av de to Eon-legendene fra Hoenn?
-- A) #379
-- B) #380
-- C) **#381 ✓**
-- D) #382
+**Q9** I hvilken rekkefølge ble de tre variantene av det engelske Pokémon Base Set opprinnelig trykket?
+- A) Unlimited, 1st Edition, Shadowless
+- B) Shadowless, 1st Edition, Unlimited
+- C) **1st Edition, Shadowless, Unlimited ✓**
+- D) 1st Edition, Unlimited, Shadowless
 
-**Q10** Hva heter den berømte glitch-Pokémonen som dukket opp langs Cinnabar Islands kystlinje i Pokémon Red og Blue?
-- A) ErrorMon
-- B) **MissingNo. ✓**
-- C) Glitchmon
-- D) #000
+**Q10** Hva er betingelsen for at Eevee skal evolusjonere til Espeon og ikke Umbreon i Pokémon Gold og Silver?
+- A) Bruk av en Sun Stone
+- B) Level opp om natten med høy Happiness
+- C) **Level opp om dagen med høy Happiness ✓**
+- D) Level opp nær en bestemt stein i Ecruteak City
 
 ---
 
@@ -274,31 +274,31 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Lapras
 - D) Feraligatr
 
-**Q3** *(Silhuett)* Hvem er denne Pokémon?
+**Q3** Hvem er denne Pokémon?
 - A) Haunter
 - B) Clefable
 - C) **Gengar ✓**
 - D) Nidoking
 
-**Q4** Hvilken Pokémon er det IKKE mulig å utvikle fra Eevee?
-- A) Flareon
-- B) Vaporeon
-- C) Espeon
-- D) **Togekiss ✓**
+**Q4** Hva er den nyeste Eevee-evolusjon som ble lagt til i Pokémon-serien?
+- A) Umbreon
+- B) Glaceon
+- C) Leafeon
+- D) **Sylveon ✓**
 
-**Q5 🛡️** Hva er typekombinasjonen til Gyarados?
-- A) Vann/Drage
-- B) **Vann/Flyging ✓**
-- C) Vann/Normal
-- D) Vann/Is
+**Q5 🛡️** Hva heter den evolusjonerte formen til Wailmer – den enorme hval-Pokémon fra Hoenn, kjent for å være en av de fysisk største Pokémon i hele serien?
+- A) Lapras
+- B) Kyogre
+- C) **Wailord ✓**
+- D) Wishiwashi
 
-**Q6** *(Geoguesser)* Du ankommer en liten, uhyggelig by i Kanto. Bakgrunnsmusikken er blitt en internett-legende. Et gammelt tårn fylt med spøkelse-Pokémon ruver over husene. Hvilken by er du i?
+**Q6** Du ankommer en liten, uhyggelig by i Kanto. Bakgrunnsmusikken er blitt en internett-legende. Et gammelt tårn fylt med spøkelse-Pokémon ruver over husene. Hvilken by er du i?
 - A) Pallet Town
 - B) Cerulean City
 - C) **Lavender Town ✓**
 - D) Viridian City
 
-**Q7** Hva er de tre legendære fuglene i Kanto-regionen?
+**Q7** Hva heter de tre legendære fuglene i Kanto-regionen?
 - A) Lugia, Ho-Oh og Entei
 - B) **Zapdos, Moltres og Articuno ✓**
 - C) Raikou, Suicune og Entei
@@ -310,11 +310,11 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Giovanni
 - D) **Red ✓**
 
-**Q9** Hva er det offisielle Pokédex-nummeret til Mewtwo?
-- A) #149
-- B) #151
-- C) #152
-- D) **#150 ✓**
+**Q9** Hva heter illustratøren som tegnet det originale Charizard-kortet i Pokémon Base Set?
+- A) Ken Sugimori
+- B) Atsuko Nishida
+- C) Kagemaru Himeno
+- D) **Mitsuhiro Arita ✓**
 
 **Q10** Hvilken ikke-legendær Pokémon fra Kanto (Gen 1) har den høyeste totale basstatistikken?
 - A) Snorlax
@@ -326,11 +326,11 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 
 ## Spill 6
 
-**Q1** Hva heter de tre startpokemonene i Pokémon Gold og Silver?
-- A) Pikachu, Eevee og Clefairy
-- B) **Chikorita, Cyndaquil og Totodile ✓**
-- C) Treecko, Torchic og Mudkip
-- D) Bulbasaur, Charmander og Squirtle
+**Q1** Hva heter din rival i Pokémon Gold og Silver?
+- A) Gary
+- B) Barry
+- C) Brendan
+- D) **Silver ✓**
 
 **Q2** I hvilken by i Kanto befinner den siste Gymlederen (Giovanni) og Gymen seg?
 - A) Pallet Town
@@ -338,7 +338,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Celadon City
 - D) **Viridian City ✓**
 
-**Q3** *(Silhuett)* Hvem er denne Pokémon?
+**Q3** Hvem er denne Pokémon?
 - A) Alakazam
 - B) **Gardevoir ✓**
 - C) Espeon
@@ -356,7 +356,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Psykisk og Spøkelse
 - D) Is og Stein
 
-**Q6** *(Geoguesser)* I hvilken by i Kanto finner du skipet SS Anne?
+**Q6** I hvilken by i Kanto finner du skipet SS Anne?
 - A) Cerulean City
 - B) Fuchsia City
 - C) **Vermilion City ✓**
@@ -374,23 +374,23 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Ild/Flyging
 - D) Ild/Drage
 
-**Q9** Hva er det offisielle Pokédex-nummeret til det mytiske Pokémon Celebi, kjent for å reise gjennom tid?
-- A) #248
-- B) #249
-- C) #250
-- D) **#251 ✓**
+**Q9** Hva kjennetegner et «Gold Star» Pokémon-kort fra TCG-serien mellom 2004 og 2007?
+- A) De er trykt på gullbelagt kortpapir
+- B) Kortrammen er dekket av et spesielt gullfarget holografisk mønster
+- C) Stjernen indikerer at kortet er offisielt gradert perfekt av produsenten
+- D) **De viser en alternativfarget versjon av Pokémonen og har en gullstjerne ved siden av navnet ✓**
 
 **Q10** Hva er den unike evolusjonsbetingelsen for at Feebas skal evolusjonere til Milotic i Pokémon Ruby og Sapphire?
 - A) Lær den bevegelsen Surf og nå nivå 40
 - B) Nå nivå 60
-- C) **Maksimer «Beauty»-stat via Pokéblokker ✓**
+- C) **Maksimer «Beauty»-stat via Pokéblocks ✓**
 - D) Bytte med King's Rock
 
 ---
 
 ## Spill 7
 
-**Q1** Hva heter spillutvikleren som lager de offisielle Pokémon-rollespillene?
+**Q1** Hva heter selskapet som utvikler de offisielle Pokémon-spillene?
 - A) Nintendo
 - B) **Game Freak ✓**
 - C) The Pokémon Company
@@ -402,7 +402,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Et eksperiment på Ditto
 - D) En fusjon av tre Pokémon
 
-**Q3** *(Silhuett)* Hvem er denne Pokémon?
+**Q3** Hvem er denne Pokémon?
 - A) Ho-Oh
 - B) Articuno
 - C) **Lugia ✓**
@@ -426,17 +426,17 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Nintendo måtte trekke tilbake alle Pokémon Red og Blue-spill
 - D) Episoden ble Japans mest sette TV-program i 1997
 
-**Q7** Hva er det offisielle Pokédex-nummeret til Ho-Oh, maskoten på coveret av Pokémon Gold?
-- A) #248
-- B) #249
-- C) **#250 ✓**
-- D) #252
+**Q7** Hva er en «Secret Rare» i Pokémon TCG?
+- A) Et kort som kun ble utgitt i Japan
+- B) Et kort trukket tilbake fra trykk pga. trykkfeil
+- C) Et kort som kun finnes i promosjonsutgaver
+- D) **Et kort med kortnummer høyere enn settets totale antall ✓**
 
-**Q8** Hva heter Pikachus kraftigste signaturangrep i anime-serien, som har beseiret selv de sterkeste motstandere?
-- A) Lynild (Thundershock)
-- B) **Hundre tusen volt (Thunderbolt) ✓**
-- C) Tordenvolt (Thunder)
-- D) Volt Tackle
+**Q8** Hva er betingelsen for at Tyrogue skal evolusjonere til Hitmontop, fremfor Hitmonlee eller Hitmonchan?
+- A) Tyrogue må bruke en King's Rock ved nivå 20
+- B) Tyrogues Angrep-stat må være høyere enn Forsvar-stat ved evolusjon
+- C) **Tyrogues Angrep- og Forsvar-stat må være nøyaktig like ved evolusjon ✓**
+- D) Tyrogue må trene opp sin Happiness til maks før det evolusjonerer
 
 **Q9** Hva heter de fire «Tapu»-kjempene som beskytter øyene i Alola-regionen?
 - A) **Tapu Koko, Tapu Lele, Tapu Bulu og Tapu Fini ✓**
@@ -454,11 +454,11 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 
 ## Spill 8
 
-**Q1** Hva heter de tre startpokemonene du kan velge mellom i Hoenn (Pokémon Ruby/Sapphire)?
-- A) **Treecko, Torchic og Mudkip ✓**
-- B) Bulbasaur, Charmander og Squirtle
-- C) Turtwig, Chimchar og Piplup
-- D) Snivy, Tepig og Oshawott
+**Q1** Hvilken legendær Pokémon pryder coveret av Pokémon Ruby?
+- A) Kyogre
+- B) Rayquaza
+- C) Deoxys
+- D) **Groudon ✓**
 
 **Q2** Hva heter regionen i Pokémon Diamond og Pearl?
 - A) Johto
@@ -466,7 +466,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) **Sinnoh ✓**
 - D) Unova
 
-**Q3** *(Silhuett)* Hvem er denne Pokémon?
+**Q3** Hvem er denne Pokémon?
 - A) Gallade
 - B) Sceptile
 - C) **Greninja ✓**
@@ -490,11 +490,11 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) **Dynamax og Gigantamax ✓**
 - D) Terastallize
 
-**Q7** Hva er det offisielle Pokédex-nummeret til Lucario, den populære Kamp/Stål-typen fra Sinnoh?
-- A) #445
-- B) #447
-- C) **#448 ✓**
-- D) #453
+**Q7** Hva er «PSA Population Report», og hva bruker samlere den til?
+- A) En liste over kort PSA har erklært som forfalskninger
+- B) **En database som viser hvor mange eksemplarer av hvert kort som er gradert og på hvilket nivå ✓**
+- C) PSAs månedlige oversikt over de mest omsatte kortene
+- D) En rapport over hvilke sett som har flest feiltrykk
 
 **Q8** Hva er det som gjør Pokémon Scarlet og Violet (Paldea) historisk annerledes enn de fleste tidligere hoved-Pokémon-spill?
 - A) Det var det første Pokémon-spillet med Mega Evolution
@@ -530,7 +530,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) **#6 ✓**
 - D) #9
 
-**Q3** *(Silhuett)* Hvem er denne Pokémon?
+**Q3** Hvem er denne Pokémon?
 - A) Salamence
 - B) Flygon
 - C) Dragonite
@@ -538,11 +538,11 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 
 **Q4** Hva betyr «EX» på et Pokémon-kort i TCG?
 - A) At kortet er ekstremt sjeldent og ikke kan spilles
-- B) **At motstanderen får 2 prisekort når Pokémonen beseiret ✓**
+- B) **At motstanderen får 2 Prize Cards når Pokémonen blir beseiret ✓**
 - C) At kortet bare finnes i spesialutgave boks
 - D) At kortet er «Extra Powerful» og gir 50% mer skade
 
-**Q5 🛡️** Hvor mange prisekort setter hver spiller ned (face-down) i begynnelsen av en standard Pokémon TCG-kamp?
+**Q5 🛡️** Hvor mange Prize Cards setter hver spiller ned (face-down) i begynnelsen av en standard Pokémon TCG-kamp?
 - A) 3
 - B) 4
 - C) 5
@@ -569,7 +569,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 **Q9** Hva er det dyreste Pokémon-kortet noensinne solgt (per 2022)?
 - A) First Edition Charizard Base Set Holo
 - B) **Pikachu Illustrator Promo-kort ✓**
-- C) Gold Star Espeon Neo Discovery
+- C) Gold Star Charizard EX Dragon Frontiers
 - D) Black Star Prerelease Raichu
 
 **Q10** Hva er Pokémon når det gjelder verdens mest innbringende mediefranchiser – sammenlignet med Star Wars, Marvel og Hello Kitty?
@@ -582,11 +582,11 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 
 ## Spill 10
 
-**Q1** Hva er det offisielle Pokédex-nummeret til Gengar?
-- A) #92
-- B) #93
-- C) **#94 ✓**
-- D) #95
+**Q1** Hva kalles et Pokémon-kort der folie-effekten er på kortrammen og bakgrunnen — ikke på selve illustrasjonen?
+- A) Semi-holo
+- B) Half Holo
+- C) Mirror Holo
+- D) **Reverse Holo ✓**
 
 **Q2** Hva er typekombinasjonen til Sableye (original form, ikke Mega)?
 - A) **Spøkelse/Mørke ✓**
@@ -594,7 +594,7 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 - C) Mørke/Normal
 - D) Spøkelse/Psykisk
 
-**Q3** *(Silhuett)* Hvem er denne Pokémon?
+**Q3** Hvem er denne Pokémon?
 - A) Jigglypuff
 - B) Clefairy
 - C) **Mew ✓**
@@ -620,12 +620,12 @@ Riktig svar er merket med **✓**. Sikker havn er alltid spørsmål 5.
 
 **Q7** Hva er det unike med Shedinja (#292) sin HP og dens evne «Wonder Guard»?
 - A) **Den har alltid nøyaktig 1 HP og Wonder Guard gjør den immun mot alt som ikke er super-effektivt ✓**
-- B) Den har 0 HP og kan aldri beseiret
+- B) Den har 0 HP og kan aldri bli beseiret
 - C) Den starter alltid med 999 HP men taper 100 per runde
 - D) Den regenererer 50 HP per runde uansett skade
 
 **Q8** Hvilken Pokémon bruker den unike evnen «Illusion» for å maskere seg som den siste Pokémonen på laget ditt?
-- A) Zorua
+- A) Mimikyu
 - B) **Zoroark ✓**
 - C) Mismagius
 - D) Ditto
